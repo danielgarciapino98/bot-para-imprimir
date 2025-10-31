@@ -1,0 +1,26 @@
+telegram:
+  bot_token: "8487343669:AAHe7Znx9epN4040FnPUi4xXddkSfWQKX2U"
+  admin_ids: [7628002933]
+
+printers:
+  negro: "negro"
+  color: "nueva_cable"
+  max_file_size: 2
+
+prices:
+  black_white: 10
+  color: 13
+
+business_hours:
+  start: "08:00"
+  end: "16:00"
+  timezone: "America/Havana"
+
+notifications:
+  reminder_hours: 2
+  sound_enabled: true
+  default_sound: "storage/sounds/notification.mp3"
+
+database:
+  path: "storage/sistema_impresion.db"
+  backup_interval: 24

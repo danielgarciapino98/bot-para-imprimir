@@ -1,26 +1,55 @@
+# hasta aqui
+app:
+  name: "El Precio Del Mañana"
+
 telegram:
-  bot_token: "8487343669:AAHe7Znx9epN4040FnPUi4xXddkSfWQKX2U"
+  bot_token: "8487343669:AAHe7Znx9epN4040FnPUi4xXddkSfWQKX2U"  # ✅ Usar variable entorno
   admin_ids: [7628002933]
 
-printers:
-  negro: "negro"
-  color: "nueva_cable"
+deepseek:
+  api_key: "sk-b2aaeb706c0f437fab2da3d7add843e9"  # ✅ Usar variable entorno
+  base_url: "https://api.deepseek.com/v1"
+  model: "deepseek-chat"
+  max_tokens: 1000
+  temperature: 0.7
+
+printing:
+  black_white_printer: "negro"
+  color_printer: "nueva_cable"
   max_file_size: 2
+  temp_folder: "storage/temp_files"
+  backup_folder: "storage/backups"
+  high_copies_alert: 50  # ✅ Nueva configuración
 
 prices:
-  black_white: 10
-  color: 13
+  black_white: 15  # ✅ Único valor (15 como en .env)
+  color: 15
 
-business_hours:
-  start: "08:00"
-  end: "16:00"
-  timezone: "America/Havana"
+security:
+  company_max_attempts: 3
+  block_duration_minutes: 5
+  session_timeout_minutes: 30
+  encryption_key: "${ENCRYPTION_KEY}"  # ✅ Desde .env
 
 notifications:
   reminder_hours: 2
   sound_enabled: true
-  default_sound: "storage/sounds/notification.mp3"
+  sound_folder: "storage/sounds"
+  default_sound: "notification.mp3"
+  account: "9205129973100440"  # ✅ Cuenta transferencia
 
 database:
-  path: "storage/sistema_impresion.db"
-  backup_interval: 24
+  path: "storage/sistema_impresion.db"  # ✅ Única ruta
+  backup_interval_days: 7
+
+ui:
+  window_width: 1200
+  window_height: 800
+  language: "es"
+  theme: "default"
+
+working_hours:
+  start: "08:00"
+  end: "16:00"
+  enabled: true
+  timezone: "America/Havana"

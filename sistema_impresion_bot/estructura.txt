@@ -1,0 +1,31 @@
+sistema_impresion_bot/
+├── main.py
+├── .env
+├── database/
+│   ├── __init__.py
+│   ├── schema.py
+│   └── operations.py
+├── core/
+│   ├── __init__.py
+│   ├── queue.py
+│   └── printer_manager.py
+├── bots/
+│   ├── __init__.py
+│   ├── telegram_bot.py
+│   └── message_handlers.py
+├── panel/
+│   ├── __init__.py
+│   ├── login_window.py
+│   ├── main_window.py
+│   └── reports.py
+├── utils/
+│   ├── __init__.py
+│   ├── file_handlers.py
+│   ├── helpers.py
+│   └── config_loader.py
+├── storage/
+│   ├── sounds/
+│   ├── backups/
+│   ├── temp_files/
+│   ├── logs/
+│   └── reports/
